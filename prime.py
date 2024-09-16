@@ -96,3 +96,5 @@ for num in range(lower,upper+1):
 #         sum+=num
 #         num-=1
 #     print(sum)
+
+x=90
