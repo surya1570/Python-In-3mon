@@ -67,21 +67,21 @@
 #         b=c  
 # (ARMSTRONG NUMBER)
 # (SOLUTION 2)
-lower=int(input("enter the lower limit here:"))
-upper=int(input("enter the upper limit here:"))
+# lower=int(input("enter the lower limit here:"))
+# upper=int(input("enter the upper limit here:"))
 
 
 
-for num in range(lower,upper+1):
-    order=len(str(num))
-    sum=0
-    temp=num
-    while temp>0:
-        digit=temp%10
-        sum+=digit**order
-        temp//=10
-    if num==sum:
-        print(num)
+# for num in range(lower,upper+1):
+#     order=len(str(num))
+#     sum=0
+#     temp=num
+#     while temp>0:
+#         digit=temp%10
+#         sum+=digit**order
+#         temp//=10
+#     if num==sum:
+#         print(num)
         
         
         
@@ -97,4 +97,47 @@ for num in range(lower,upper+1):
 #         num-=1
 #     print(sum)
 
-x=90
+# (POWER Anonymous Function)
+# nterms = int(input("enter the number of terms here:"))
+# result =list(map (lambda x:2**x,range(nterms+1)))
+# print(result)
+# for i in range(nterms+1):
+#     print("the value of 2 raised to power",i," is",result[i])
+
+# (Numbers Divisible by Another Number)
+# print ("the number divisible by 13 are:")
+# for i in range(1,100):
+#     if i%13==0:
+#         print(i)
+        
+# (SOLUTION 2 lamda function)
+# l=[39,130,75,100,88,76]
+# result=list(filter(lambda x:x%13==0,l))
+# print("the number divisible by 13 are",result)
+
+# (conversion of decimal)
+# decimal=int(input("enter a number here:"))
+# print("the conversion of decimal number",decimal,"is:")
+# print(bin(decimal),"in binary")
+# print(oct(decimal),"in octal")
+# print(hex(decimal),"in hexal")
+# (ASCII VALUE)
+
+# char="a"
+# print("the ascii value of ",char,"is",ord(char))
+# 
+# (hcf&gcd)
+def findhcf(x,y):
+ if x>y:
+  smaller=y
+ else:
+    smaller=x  
+ for i in range(1,smaller+1):
+        if((x%i==0)and(y%i==0)):
+            hcf=i
+ return hcf
+print("the hcf of the given two number is ",findhcf(12,45))
+        
+    
+        
+    
