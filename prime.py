@@ -127,17 +127,111 @@
 # print("the ascii value of ",char,"is",ord(char))
 # 
 # (hcf&gcd)
-def findhcf(x,y):
- if x>y:
-  smaller=y
- else:
-    smaller=x  
- for i in range(1,smaller+1):
-        if((x%i==0)and(y%i==0)):
-            hcf=i
- return hcf
-print("the hcf of the given two number is ",findhcf(12,45))
+# def findhcf(x,y):
+#  if x>y:
+#   smaller=y
+#  else:
+#     smaller=x  
+#  for i in range(1,smaller+1):
+#         if((x%i==0)and(y%i==0)):
+#             hcf=i
+#  return hcf
+# print("the hcf of the given two number is ",findhcf(12,45))
         
     
-        
+# (FACTOR)
+# num=int(input("enter a number here"))
+# for i in range(1,num+1):
+#  if num%i==0:
+#      print(i)
     
+# (SIMPLE CALCULATOR)
+# num1=float(input("enter a first number here"))
+# num2=float(input("enter a second number here"))
+# print("press 1 for addition\npress 2 for multiplication\npress 3 for division\npress 4 for subtraction")
+# choice=int(input("enter your choice from 1-4:"))
+# if choice==1:
+#     print(num1+num2)
+# elif choice==2:
+#     print(num1*num2)
+# elif choice==3:
+#     print(num1/num2)
+# elif choice==4:
+#     print(num1-num2)
+# else: 
+#     print("invalid number")
+
+# (shuffle Deck of Cards)
+# ?
+
+# (CALENDER)
+
+# import calendar
+
+# year=int(input("enter the year:"))
+# month=int(input("enter the month:"))
+# calendar=calendar.month(year,month)
+# print(calendar)
+
+# (FOBINNACI SEQUENCE)
+# def fibo(n):
+#     if n<=1:
+#      return n
+#     else:
+#      return fibo (n-1)+fibo(n-2)
+# n=int(input("enter the number here: "))
+# if n<=0:
+#      print("enter a positive number")
+# else:
+#      print("fibonacci sequence")
+#      for i in range(n):
+#       print(fibo(i))
+
+# (SUM BY RECURSION METHOD)
+# def nns(n):
+#   if n<=1:
+#      return n
+#   else:
+#      return (n)+nns(n-1)
+# n=int(input("enter the number here: "))
+# if n<=0:
+#      print("enter a positive number")
+# else:
+#      print("the sum of natural numbers upto given number is ",nns(n))
+
+# (factorial in recursion method)
+# def fact(n):
+#     if n==1:
+#         return 1
+#     else:
+#         return (n*fact(n-1))
+# n=int(input("enter the number here: "))
+# if n<=0:
+#     print("factorial of number less 1 does not exist")
+# else:
+#     print("factorial of given number is",fact(n))
+    
+#  (convert decimal in recursion method)
+# # def convertbinary(n):
+#    if n>1:
+#        convertbinary(n//2)
+#        print(n%2)
+# convertbinary(20)
+
+# (add two matrix numbers)
+A=[[1,2,3,],
+  [4,5,6],
+  [7,8,9]]
+B=[[1,2,3,],
+   [4,5,6],
+   [7,8,9]]
+
+result=[[0,0,0],
+        [0,0,0],
+        [0,0,0]]
+
+for i in range(len(A)):
+    for j in range(len(B)):
+         result[i][j]=A[i][j]+B[i][j]
+for r in result:
+ print(r)
