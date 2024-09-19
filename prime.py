@@ -219,19 +219,90 @@
 # convertbinary(20)
 
 # (add two matrix numbers)
-A=[[1,2,3,],
-  [4,5,6],
-  [7,8,9]]
-B=[[1,2,3,],
-   [4,5,6],
-   [7,8,9]]
+# A=[[1,2,3,],
+#   [4,5,6],
+#   [7,8,9]]
+# B=[[1,2,3,],
+#    [4,5,6],
+#    [7,8,9]]
 
-result=[[0,0,0],
-        [0,0,0],
-        [0,0,0]]
+# result=[[0,0,0],
+#         [0,0,0],
+#         [0,0,0]]
 
-for i in range(len(A)):
-    for j in range(len(B)):
-         result[i][j]=A[i][j]+B[i][j]
-for r in result:
- print(r)
+# for i in range(len(A)):
+#     for j in range(len(B)):
+#          result[i][j]=A[i][j]+B[i][j]
+# for r in result:
+#  print(r)
+# 
+# (TRANSPOSE MATRIX)
+
+# A=[[1,2,3,],
+#     [4,5,6],
+#     [7,8,9]]
+# T=[[0,0,0],
+#     [0,0,0],
+#     [0,0,0]]
+
+# for i in range(len(A)):
+#   for j in range (len(A[0])):
+#     T[j][i]=A[i][j]
+    
+# for i in T:
+#       print(i)
+
+# (PALINDROME STRING)
+# a=input("enter a word here:")
+# rev=a[::-1]
+# if a==rev:
+#   print("it is a palindrome ")
+# else:
+#   print("it is not a palindrome ")
+
+# (PUNCTUATION)
+# punc=''"!@#$%^&*()\?.~"''
+# string=input("Enter anything here: ")
+# empty_str=""
+# for i in string:
+#   if i not in punc:
+#     empty_str+=i
+# print(empty_str)
+
+# (MATRIX MULTPLICATION)
+
+# A=[[1,2,3],
+#    [4,5,6],
+#    [7,8,9]]
+
+# B=[[9,8,7,8],
+#    [6,5,4,3],
+#    [3,2,1,6]]
+# result=[[0,0,0,0],
+#         [0,0,0,0],
+#         [0,0,0,0]]
+# for i in range(len(A)):
+#   for j in range(len(B[0])):
+#     for k in range(len(B)):
+#       result[i][j]+=A[i][k]* B[k][j]
+# for i in result:
+#     print(i)
+   
+  #  (ALPHABETIC ORDER)
+  
+# a=input("Enter something here:")
+# w=a.split()
+# print(w)
+# for i in range(len(w)):
+#   w[i]=w[i].lower()
+# print(w)
+# w.sort()
+# print(w)
+
+# (SET OPERATION)
+A={1,7,9,5,3}
+B={1,2,6,8,9}
+print("the union is ",A|B)
+print("the intersection is",A&B)
+print("the differernce is",A-B)
+print("the symmetric is",A^B)
