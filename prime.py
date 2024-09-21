@@ -286,6 +286,28 @@
 #     for k in range(len(B)):
 #       result[i][j]+=A[i][k]* B[k][j]
 # for i in result:
+
+# def find_prime_numbers(lower, upper):#+
+#     """#+
+#     This function finds all prime numbers within a given range.#+
+# #+
+#     Parameters:#+
+#     lower (int): The lower limit of the range.#+
+#     upper (int): The upper limit of the range.#+
+# #+
+#     Returns:#+
+#     list: A list of prime numbers within the given range.#+
+#     """#+
+#     prime_numbers = []#+
+#     for num in range(lower, upper):#+
+#         if num > 1:#+
+    #         for i in range(2, num):#+
+    #             if (num % i) == 0:#+
+    #                 break#+
+    #         else:#+
+    #             prime_numbers.append(num)#+
+    # return prime_numbers#+
+ 
 #     print(i)
    
   #  (ALPHABETIC ORDER)
@@ -300,9 +322,63 @@
 # print(w)
 
 # (SET OPERATION)
-A={1,7,9,5,3}
-B={1,2,6,8,9}
-print("the union is ",A|B)
-print("the intersection is",A&B)
-print("the differernce is",A-B)
-print("the symmetric is",A^B)
+# A={1,7,9,5,3}
+# B={1,2,6,8,9}
+# print("the union is ",A|B)
+# print("the intersection is",A&B)
+# print("the differernce is",A-B)
+# print("the symmetric is",A^B)
+
+# (find length)
+
+# num=int(input("enter the number"))
+# s =len(input("enter the integer"))
+# print(s)
+
+# i = int(input("enter the integer"))
+# j = int(input("enter the 2nd integer"))
+
+
+# p =  i + j
+
+# print(p)
+# print(type(i))
+# print(type(j))
+# print(type(p))
+
+# print(len(str(i)))
+
+# (COUNT NUMBER OF VOWELS)
+
+# a="I am a BOY"
+# vowels="aeiou"
+# a=a.casefold()
+# print(a)
+# count={}.fromkeys(vowels,0)
+# for char in a:
+#   if char in count:
+#     count[char]+=1
+
+# print(count)
+# 
+# (IMAGE RESOLUTION)
+# import PIL
+# from PIL import Image
+# img=PIL.Image.open("C:/Users/uniks/Pictures/away-3408119_1280.jpg")
+# width,height=Image.size
+# print(width,"x",height)
+
+# (MERGE TWO DICTIONARIES)
+
+# dict1={"john":78,"lisa":88}
+# dict2={"john":89,"raj":50}
+# print(dict1|dict2)
+# dict3=dict2.copy()
+# dict3.update(dict1)
+# print(dict3)
+
+# (ENUMERATE METHOD)
+# l=[56,77,90,50,45,52]
+# for index,value in enumerate(l):
+#   print(index,value)
+
